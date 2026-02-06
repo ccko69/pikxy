@@ -25,3 +25,30 @@
     ├── [[MainFragmentAdapter.java]]
     ├── [[AlbumInfo.java]]
     └── [[MediaStoreHelper.java]]
+
+	
+java/
+· com.ccko.pikxplus/
+  · MainActivity.java
+  · ui/
+    · AlbumsFragment.java
+    · PhotosFragment.java
+    · StorageFragment.java
+    · SearchFragment.java
+    · GestureOverlayView.java
+    · VideoPlayerOverlay.java
+    · VideoPlayerFragment.java
+    · ViewerFragment.java
+  · features/
+    · GestureAndSlideShow.java
+    · OpticalIllusionView.java
+  · utils/
+    · FloatingWindowManager.java
+    · SharedViewModel.java
+    · OcrOverLay.java
+  · adapters/
+    · ImageLoader.java
+    · MediaItems.java
+    · MainFragmentAdapter.java
+    · AlbumInfo.java
+    · MediaStoreHelper.java
