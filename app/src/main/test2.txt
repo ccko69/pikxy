@@ -1,0 +1,14 @@
+analyze the project PIKX+res_v2.
+create a new directory in "app/src/main/java/com/ccko/pikxplus/ui/imgviewer".
+rewrite the file "ViewerFragment.java" in a more efficient way and divide it to separate, smaller classes.
+place the new classes in "app/src/main/java/com/ccko/pikxplus/ui/imgviewer".
+
+write a summary of all potentially glitches or problems in app/src/main/test2.txt. 
+and after that write a summary of what you changed.
+
+
+git remote add origin https://github.com/ccko69/pikxy.git
+git branch -M main
+git branch -M main
+
+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

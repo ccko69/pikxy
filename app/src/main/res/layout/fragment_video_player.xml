@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:adjustViewBounds="true"
+     android:scaleType="fitCenter"
+     android:background="#000000"
+     android:fitsSystemWindows="false"
+     android:clipChildren="false"
+     android:clipToPadding="false">
+
+    <com.google.android.exoplayer2.ui.StyledPlayerView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         app:use_controller="false"
+         android:background="#000000"
+         app:show_buffering="when_playing"
+         app:surface_type="texture_view"
+         android:fitsSystemWindows="false"
+		 android:layout_toEndOf="@id/videoTopBar"
+		 android:layout_toStartOf="@id/videoBottomBar"
+         android:layout_gravity="center"
+         android:id="@+id/videoPlayerView" />
+
+    <com.ccko.pikxplus.ui.VideoPlayerOverlay
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:clickable="true"
+         android:id="@+id/videoControls" />
+
+</FrameLayout>

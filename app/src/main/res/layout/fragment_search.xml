@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#CC161616"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:id="@+id/searchRoot">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingBottom="12dp"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/searchTitle"
+        android:text="Search"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="12dp"
+        android:gravity="start"
+        android:orientation="horizontal"
+        android:id="@+id/filterRow">
+
+        <ToggleButton
+            android:layout_height="60dp"
+            android:layout_width="wrap_content"
+            android:drawablePadding="4dp"
+            android:textOn="Images"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:drawableTint="@color/white_red"
+            android:textOff="Images"
+            android:textColor="#FFFFFF"
+            android:clickable="true"
+            android:checked="false"
+            android:id="@+id/btnImages"
+            android:drawableTop="@drawable/ic_photo" />
+
+        <Space
+            android:layout_height="1dp"
+            android:layout_width="8dp" />
+
+        <ToggleButton
+            android:layout_height="60dp"
+            android:layout_width="wrap_content"
+            android:drawablePadding="4dp"
+            android:textOn="Videos"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp"
+            android:clickable="true"
+            style="?android:attr/borderlessButtonStyle"
+            android:drawableTint="@color/white_red"
+            android:textOff="Videos"
+            android:checked="false"
+            android:textColor="#FFFFFF"
+            android:id="@+id/btnVideos"
+            android:drawableTop="@drawable/ic_video" />
+
+        <Space
+            android:layout_height="1dp"
+            android:layout_width="8dp" />
+
+        <ToggleButton
+            android:layout_height="60dp"
+            android:layout_width="wrap_content"
+            android:drawablePadding="4dp"
+            android:textOn="GIFs"
+            android:paddingRight="12dp"
+            android:clickable="true"
+            android:paddingLeft="12dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:drawableTint="@color/white_red"
+            android:textOff="GIFs"
+            android:checked="false"
+            android:id="@+id/btnGifs"
+            android:textColor="#FFFFFF"
+            android:drawableTop="@drawable/ic_gif" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="12dp">
+
+        <EditText
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:imeOptions="actionSearch"
+            android:hint="Search filename or extension (e.g. .jpg .mp4)"
+            android:paddingRight="44dp"
+            android:backgroundTint="#B00020"
+            android:paddingLeft="12dp"
+            android:singleLine="true"
+            android:textColor="#FFFFFF"
+            android:inputType="text"
+            android:id="@+id/searchInput" />
+
+        <ImageButton
+            android:layout_height="36dp"
+            android:layout_width="36dp"
+            android:contentDescription="Clear"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btnClearSearch" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#999999"
+        android:id="@+id/btnReset"
+        android:text="All" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="12sp"
+        android:textColor="#CCCCCC"
+        android:id="@+id/searchHint"
+        android:paddingTop="8dp"
+        android:text="Tip: type extensions with or without dot, e.g. jpg or .mp4" />
+
+</LinearLayout>

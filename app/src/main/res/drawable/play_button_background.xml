@@ -1,0 +1,12 @@
+<!-- Semi-transparent circular background for play button FILE: res/drawable/play_button_background.xml -->
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <solid android:color="#80000000" />
+
+    <size
+        android:height="80dp"
+        android:width="80dp" />
+
+</shape>

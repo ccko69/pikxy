@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="120dp"
+     android:layout_width="match_parent"
+     android:clickable="true"
+     android:layout_margin="1dp"
+     app:cardElevation="2dp"
+     app:cardBackgroundColor="#CC161616"
+     app:cardCornerRadius="0dp"
+     android:focusable="true"
+     android:id="@+id/photoContainer">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent">
+
+        <ImageView
+             android:layout_height="0dp"
+             android:layout_width="0dp"
+             android:scaleType="centerCrop"
+             tools:src="@drawable/ic_broken_image"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintBottom_toBottomOf="parent"
+             android:id="@+id/photoThumbnail" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:visibility="gone"
+             android:textSize="11sp"
+             android:textColor="#FFFFFF"
+             app:layout_constraintBottom_toBottomOf="parent"
+             android:layout_marginStart="6dp"
+             tools:text="2:34"
+             android:layout_marginBottom="4dp"
+             tools:visibility="visible"
+             app:layout_constraintStart_toStartOf="parent"
+             android:shadowRadius="2"
+             android:shadowColor="#FF000000"
+             android:shadowDx="1"
+             android:shadowDy="1"
+             android:id="@+id/videoDuration"
+             android:textStyle="bold" />
+
+        <ImageView
+             android:layout_height="18dp"
+             android:layout_width="18dp"
+             android:layout_marginBottom="2dp"
+             android:visibility="gone"
+             android:layout_marginEnd="2dp"
+             tools:src="@drawable/ic_play_circle"
+             tools:visibility="visible"
+             app:tint="#FFFFFF"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintBottom_toBottomOf="parent"
+             android:id="@+id/formatIcon" />
+
+        <TextView
+             android:layout_height="0dp"
+             android:layout_width="0dp"
+             android:visibility="gone"
+             android:id="@+id/photoTitle" />
+
+        <TextView
+             android:layout_height="0dp"
+             android:layout_width="0dp"
+             android:visibility="gone"
+             android:id="@+id/photoDetails" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circle_button_bg"
+    android:orientation="vertical"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="40dp"
+    android:padding="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <TextView
+            android:text="Grid"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            style="@style/ViewmodeTextStyle" />
+        <LinearLayout
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/btn_grid_minus"
+                android:src="@drawable/ic_minus"
+				android:layout_centerVertical="true"
+                style="@style/StepperButtonStyle" />
+            <TextView
+                android:id="@+id/txt_grid_count"
+                android:text="3"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:paddingHorizontal="12dp"
+                style="@style/ViewmodeTextStyle" />
+            <ImageButton
+                android:id="@+id/btn_grid_plus"
+                android:src="@drawable/ic_plus"
+				android:layout_centerVertical="true"
+                style="@style/StepperButtonStyle" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:alpha="0.5">
+        <TextView
+            android:text="Mosaic"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"
+            style="@style/ViewmodeTextStyle" />
+        <LinearLayout
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:src="@drawable/ic_minus"
+				android:layout_centerVertical="true"
+                style="@style/StepperButtonStyle" />
+            <TextView
+                android:text="3"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:paddingHorizontal="12dp"
+                style="@style/ViewmodeTextStyle" />
+            <ImageButton
+                android:src="@drawable/ic_plus"
+				android:layout_centerVertical="true"
+                style="@style/StepperButtonStyle" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_view_list"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="List"
+            android:textStyle="bold"
+            android:gravity="center_vertical|start"
+            style="@style/ViewmodeTextStyle" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="60dp"
+     android:layout_width="match_parent"
+     android:layout_marginVertical="2dp"
+     android:clickable="true"
+     android:layout_marginHorizontal="8dp"
+     app:cardElevation="2dp"
+     app:cardBackgroundColor="#000000"
+     app:cardCornerRadius="6dp"
+     android:focusable="true"
+     android:id="@+id/photoContainer">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent">
+
+        <ImageView
+             android:layout_height="60dp"
+             android:layout_width="60dp"
+             android:scaleType="centerCrop"
+             android:adjustViewBounds="false"
+             android:background="@android:color/black"
+             tools:src="@drawable/ic_broken_image"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintEnd_toStartOf="@id/photoTitle"
+             app:layout_constraintBottom_toBottomOf="parent"
+             android:id="@+id/photoThumbnail" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="0dp"
+             android:layout_marginEnd="40dp"
+             android:ellipsize="end"
+             android:textSize="14sp"
+             app:layout_constraintStart_toEndOf="@id/photoThumbnail"
+             android:textColor="#FFFFFFFF"
+             android:layout_marginTop="12dp"
+             android:layout_marginStart="12dp"
+             tools:text="IMG_20241220_123456.jpg"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             android:maxLines="1"
+             android:id="@+id/photoTitle"
+             android:textStyle="bold" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="0dp"
+             android:layout_marginEnd="40dp"
+             android:ellipsize="end"
+             android:textSize="12sp"
+             app:layout_constraintStart_toEndOf="@id/photoThumbnail"
+             android:textColor="#CDCDCD"
+             android:layout_marginTop="4dp"
+             android:layout_marginStart="12dp"
+             tools:text="1920x1080 • 2.4 MB"
+             app:layout_constraintTop_toBottomOf="@id/photoTitle"
+             app:layout_constraintEnd_toEndOf="parent"
+             android:maxLines="1"
+             android:id="@+id/photoDetails" />
+
+        <ImageView
+             android:layout_height="20dp"
+             android:layout_width="20dp"
+             android:layout_marginEnd="8dp"
+             tools:src="@drawable/ic_play_circle"
+             app:tint="#FFFFFFFF"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintBottom_toBottomOf="parent"
+             android:id="@+id/formatIcon" />
+
+        <TextView
+             android:layout_height="0dp"
+             android:layout_width="0dp"
+             android:visibility="gone"
+             android:id="@+id/videoDuration" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

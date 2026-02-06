@@ -1,0 +1,55 @@
+<!-- Vertical seekbar on right side of screen -->
+<!-- ============================================ -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="#00000000"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp" >
+
+        <!-- Brightness icon -->
+
+        <ImageView
+            android:id="@+id/brightnessIcon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/ic_brightness"
+            android:tint="#FFFFFF" />
+
+        <!-- Vertical seekbar (rotated) -->
+
+        <SeekBar
+            android:id="@+id/brightnessSeekBar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxHeight="4dp"
+            android:minHeight="2dp"
+            android:progressDrawable="@drawable/seekbar_progress"
+            android:rotation="270"
+            android:splitTrack="false"
+            android:thumb="@drawable/seekbar_thumb" />
+
+        <!-- Percentage text -->
+
+        <TextView
+            android:id="@+id/brightnessText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="50%"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

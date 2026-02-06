@@ -1,0 +1,33 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 1. Background/Shadow Layer -->
+    <!-- This fills the entire view container -->
+    <item><shape android:shape="rectangle">
+            <corners android:radius="8dp" />
+
+            <solid android:color="#CC000000" />
+        </shape></item>
+
+    <!-- 2. Main Rounded Rectangle -->
+    <!-- Inset by 2dp to show the shadow layer underneath -->
+    <item android:bottom="2dp" android:left="2dp" android:right="2dp" android:top="2dp"><shape android:shape="rectangle">
+
+            <!-- Radius slightly smaller (16dp) so the curve matches the outer 18dp curve -->
+            <corners android:radius="8dp" />
+
+            <gradient android:angle="270" android:centerColor="#B30A0A0A" android:endColor="#99000000" android:startColor="#CC0F0F10" />
+
+            <stroke android:width="1dp" android:color="#B00020" />
+        </shape></item>
+
+    <!-- 3. Thin accent bar at bottom -->
+    <!-- Use gravity and top inset to force it to the bottom while keeping the same width/roundness -->
+    <item android:bottom="2dp" android:left="2dp" android:right="2dp" android:top="2dp"><shape android:shape="rectangle">
+
+            <!-- High radius ensures it stays a pill shape even if thin -->
+            <corners android:radius="8dp" />
+
+            <solid android:color="#22FFFFFF" />
+        </shape></item>
+
+</layer-list>

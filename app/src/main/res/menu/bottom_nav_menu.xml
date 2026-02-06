@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_storage" android:icon="@drawable/ic_storage" android:title="Storage"/>
+    <item android:id="@+id/nav_albums" android:icon="@drawable/ic_album" android:title="Albums"/>
+    <item android:id="@+id/nav_photos" android:icon="@drawable/ic_photo" android:title="Photos"/>
+    <item android:id="@+id/nav_search" android:icon="@drawable/ic_search" android:title="Search"/>
+    <item android:id="@+id/nav_more" android:icon="@drawable/ic_more" android:title="More"/>
+
+</menu>
